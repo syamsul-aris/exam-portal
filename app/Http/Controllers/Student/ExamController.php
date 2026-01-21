@@ -116,7 +116,7 @@ class ExamController extends Controller
         });
 
         return redirect()
-            ->route('student.exams')
+            ->route('student.exams.index')
             ->with('success', 'Exam berjaya dihantar');
     }
 
