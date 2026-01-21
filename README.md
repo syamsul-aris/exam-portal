@@ -117,17 +117,14 @@ Students **cannot view results** until lecturer completes grading.
 ## ⚙️ Installation
 
 ### 1️⃣ Clone Repository
-```bash
 git clone https://github.com/your-username/laravel-exam-system.git
 cd laravel-exam-system
+
 2️⃣ Install Dependencies
-bash
-Copy code
 composer install
 npm install && npm run build
+
 3️⃣ Environment Setup
-bash
-Copy code
 cp .env.example .env
 php artisan key:generate
 Update .env with your database credentials.
@@ -136,47 +133,38 @@ Update .env with your database credentials.
 bash
 Copy code
 php artisan migrate --seed
+
 5️⃣ Run Server
 bash
 Copy code
 php artisan serve
-Visit:
-
-cpp
-Copy code
 http://127.0.0.1:8000
+
 🧪 Test Accounts (Seeder)
 Role	Email	Password
-Lecturer	lecturer@test.com	password
-Student	student@test.com	password
+Lecturer	lecturer@email.com	Zaqwsx@123
+Student	student@email.com	Zaqwsx@123
 
 📌 Key Highlights
 Secure exam attempt handling
-
 Server-side time validation
-
 Auto + manual grading hybrid system
-
 Transaction-safe submissions
-
 Clean MVC architecture
 
 📈 Future Enhancements
 Exam analytics & reports
-
 Question randomization
-
 Exam retry policy
-
 Export results (PDF/Excel)
-
 Notification system
 
-👨‍💻 Author
+## Author
+
 Syamsul Aris
 Full Stack Developer (Laravel & React)
-📧 Email: your-email@example.com
-🔗 GitHub: https://github.com/your-username
+📧 Email: syamsularis98@gmail.com
+🔗 GitHub: https://github.com/syamsul-aris
 
 ## License
 
