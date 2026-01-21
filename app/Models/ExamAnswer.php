@@ -13,7 +13,7 @@ class ExamAnswer extends Model
         'exam_attempt_id',
         'question_id',
         'answer',
-        'marks',
+        'mark',
     ];
 
     // Relation ke ExamAttempt

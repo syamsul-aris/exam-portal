@@ -106,7 +106,7 @@ Students **cannot view results** until lecturer completes grading.
 Update .env with your database credentials.
 
 4️⃣ Migrate Database
-`php artisan migrate --seed`
+`php artisan db:seed` 
 
 5️⃣ Run Server
 `php artisan serve`

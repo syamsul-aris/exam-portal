@@ -96,7 +96,7 @@ class ExamController extends Controller
                     ],
                     [
                         'answer' => $answerInput,
-                        'marks' => $marks,
+                        'mark' => $marks,
                     ]
                 );
 

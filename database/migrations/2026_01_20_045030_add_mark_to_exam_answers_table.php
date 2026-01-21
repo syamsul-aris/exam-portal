@@ -14,6 +14,7 @@ return new class extends Migration
         Schema::table('exam_answers', function (Blueprint $table) {
             $table->integer('mark')->nullable(); 
         });
+
     }
 
     /**
@@ -21,8 +22,5 @@ return new class extends Migration
      */
     public function down(): void
     {
-        Schema::table('exam_answers', function (Blueprint $table) {
-            //
-        });
     }
 };

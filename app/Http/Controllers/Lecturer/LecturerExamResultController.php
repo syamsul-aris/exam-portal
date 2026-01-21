@@ -57,11 +57,11 @@ class LecturerExamResultController extends Controller
                     $marks = min($marks, $answer->question->marks);
 
                     $answer->update([
-                        'marks' => $marks,
+                        'mark' => $marks,
                     ]);
                 }
 
-                $totalScore += $answer->marks ?? 0;
+                $totalScore += $answer->mark ?? 0;
             }
 
             $attempt->update([

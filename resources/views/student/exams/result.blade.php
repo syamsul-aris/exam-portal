@@ -11,7 +11,7 @@
                     <div class="border p-3 my-2">
                     <b>{{ $loop->iteration }}. {{ $ans->question->question }}</b><br>
                     Answer: {{ $ans->answer }}<br>
-                    Mark: {{ $ans->marks ?? 'Pending' }}
+                    Mark: {{ $ans->mark ?? 'Pending' }}
                     </div>
                     @endforeach
 

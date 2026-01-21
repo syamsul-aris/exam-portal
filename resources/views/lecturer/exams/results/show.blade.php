@@ -24,7 +24,7 @@
 
         @if($answer->question->type === 'mcq')
             <p class="mt-2 text-green-600">
-                Markah: {{ $answer->marks }} / {{ $answer->question->marks }}
+                Markah: {{ $answer->mark }} / {{ $answer->question->marks }}
             </p>
         @else
             <div class="mt-3">
