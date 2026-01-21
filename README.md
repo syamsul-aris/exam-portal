@@ -68,30 +68,6 @@ This system supports timed exams, auto-grading for MCQ, manual grading for subje
 
 ---
 
-## 📂 Project Structure
-
-app/
-├── Models/
-│ ├── Exam.php
-│ ├── Question.php
-│ ├── ExamAttempt.php
-│ └── ExamAnswer.php
-├── Http/
-│ └── Controllers/
-│ ├── Student/ExamController.php
-│ └── Lecturer/ExamController.php
-resources/
-└── views/
-├── student/
-│ └── exams/
-└── lecturer/
-└── exams/
-
-yaml
-Copy code
-
----
-
 ## 🧱 Database Tables
 
 - `exams`
@@ -117,27 +93,23 @@ Students **cannot view results** until lecturer completes grading.
 ## ⚙️ Installation
 
 ### 1️⃣ Clone Repository
-git clone https://github.com/your-username/laravel-exam-system.git
-cd laravel-exam-system
+`git clone https://github.com/syamsul-aris/exam-portal.git`
+`cd exam-portal`
 
 2️⃣ Install Dependencies
-composer install
-npm install && npm run build
+`composer install`
+`npm install && npm run build`
 
 3️⃣ Environment Setup
-cp .env.example .env
-php artisan key:generate
+`cp .env.example .env`
+`php artisan key:generate`
 Update .env with your database credentials.
 
 4️⃣ Migrate Database
-bash
-Copy code
-php artisan migrate --seed
+`php artisan migrate --seed`
 
 5️⃣ Run Server
-bash
-Copy code
-php artisan serve
+`php artisan serve`
 http://127.0.0.1:8000
 
 🧪 Test Accounts (Seeder)
@@ -146,18 +118,18 @@ Lecturer	lecturer@email.com	Zaqwsx@123
 Student	student@email.com	Zaqwsx@123
 
 📌 Key Highlights
-Secure exam attempt handling
-Server-side time validation
-Auto + manual grading hybrid system
-Transaction-safe submissions
-Clean MVC architecture
+- Secure exam attempt handling
+- Server-side time validation
+- Auto + manual grading hybrid system
+- Transaction-safe submissions
+- Clean MVC architecture
 
 📈 Future Enhancements
-Exam analytics & reports
-Question randomization
-Exam retry policy
-Export results (PDF/Excel)
-Notification system
+- Exam analytics & reports
+- Question randomization
+- Exam retry policy
+- Export results (PDF/Excel)
+- Notification system
 
 ## Author
 
