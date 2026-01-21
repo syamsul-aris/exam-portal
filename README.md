@@ -92,7 +92,7 @@ Students **cannot view results** until lecturer completes grading.
 
 ## ⚙️ Installation
 
-### 1️⃣ Clone Repository
+1️⃣ Clone Repository
 `git clone https://github.com/syamsul-aris/exam-portal.git`
 `cd exam-portal`
 
