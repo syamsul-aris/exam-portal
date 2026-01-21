@@ -112,19 +112,19 @@ Update .env with your database credentials.
 `php artisan serve`
 http://127.0.0.1:8000
 
-🧪 Test Accounts (Seeder)
+## 🧪 Test Accounts (Seeder)
 Role	Email	Password
 Lecturer	lecturer@email.com	Zaqwsx@123
 Student	student@email.com	Zaqwsx@123
 
-📌 Key Highlights
+## 📌 Key Highlights
 - Secure exam attempt handling
 - Server-side time validation
 - Auto + manual grading hybrid system
 - Transaction-safe submissions
 - Clean MVC architecture
 
-📈 Future Enhancements
+## 📈 Future Enhancements
 - Exam analytics & reports
 - Question randomization
 - Exam retry policy
