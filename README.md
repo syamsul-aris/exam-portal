@@ -134,10 +134,10 @@ http://127.0.0.1:8000
 
 ## Author
 
-Syamsul Aris
-Full Stack Developer (Laravel & React)
-📧 Email: syamsularis98@gmail.com
-🔗 GitHub: https://github.com/syamsul-aris
+### Syamsul Aris
+- Full Stack Developer (Laravel & React)
+- 📧 Email: syamsularis98@gmail.com
+- 🔗 GitHub: https://github.com/syamsul-aris
 
 ## License
 
