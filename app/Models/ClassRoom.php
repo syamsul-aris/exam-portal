@@ -25,25 +25,25 @@ class ClassRoom extends Model
         return $this->hasMany(User::class);
     }
 
-public function subjects()
-{
-    return $this->belongsToMany(
-        Subject::class,
-        'class_subject',
-        'class_room_id',
-        'subject_id'
-    );
-}
+    public function subjects()
+    {
+        return $this->belongsToMany(
+            Subject::class,
+            'class_subject',
+            'class_room_id',
+            'subject_id'
+        );
+    }
 
 
-public function exams()
-{
-    return $this->belongsToMany(
-        Exam::class,
-        'class_exam',
-        'class_room_id',
-        'exam_id'
-    );
-}
+    public function exams()
+    {
+        return $this->belongsToMany(
+            Exam::class,
+            'class_exam',
+            'class_room_id',
+            'exam_id'
+        );
+    }
 
 }

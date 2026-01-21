@@ -59,6 +59,7 @@ class User extends Authenticatable
     {
         return $this->belongsTo(ClassRoom::class, 'class_id');
     }
+    
 
 
 }

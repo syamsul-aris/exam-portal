@@ -11,14 +11,20 @@ use App\Http\Controllers\Admin\ClassRoomController;
 use App\Http\Controllers\Admin\StudentClassController;
 use App\Http\Controllers\Admin\LecturerClassController;
 use App\Http\Controllers\Lecturer\LecturerExamResultController;
+use App\Http\Controllers\DashboardController;
 
 Route::get('/', function () {
     return view('welcome');
 });
 
-Route::get('/dashboard', function () {
-    return view('dashboard');
-})->middleware(['auth', 'verified'])->name('dashboard');
+// Route::get('/dashboard', function () {
+//     return view('dashboard');
+// })->middleware(['auth', 'verified'])->name('dashboard');
+
+// routes/web.php
+Route::get('/dashboard', [DashboardController::class, 'index'])
+    ->middleware(['auth', 'verified'])
+    ->name('dashboard');
 
 Route::middleware('auth')->group(function () {
     Route::get('/profile', [ProfileController::class, 'edit'])->name('profile.edit');
