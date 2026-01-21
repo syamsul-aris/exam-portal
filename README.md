@@ -112,11 +112,11 @@ Update .env with your database credentials.
 `php artisan serve`
 http://127.0.0.1:8000
 
-## 🧪 Test Accounts (Seeder)
+<!-- ## 🧪 Test Accounts (Seeder)
 |Role |	Email |	Password |
 |----|----|-----|
 |Lecturer |	lecturer@email.com |	Zaqwsx@123 |
-|Student |	student@email.com |	Zaqwsx@123 |
+|Student |	student@email.com |	Zaqwsx@123 | -->
 
 ## 📌 Key Highlights
 - Secure exam attempt handling
