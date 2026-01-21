@@ -9,7 +9,7 @@
 @csrf
 
 <input name="title" placeholder="Exam title"
-       class="w-full border p-2">
+       class="w-full border p-2" required>
 
 <select name="subject_id" class="w-full border p-2">
 @foreach($subjects as $subject)
@@ -19,9 +19,19 @@
 @endforeach
 </select>
 
-<input name="duration" type="number"
-       placeholder="Duration (minutes)"
-       class="w-full border p-2">
+<input
+    id="duration"
+    name="duration"
+    type="number"
+    min="1"
+    max="1440"
+    step="1"
+    placeholder="Duration (minutes)"
+    class="w-full border p-2"
+    required
+>
+
+
 
 <button class="bg-blue-600 text-white px-4 py-2 rounded">
 Create Exam
@@ -29,3 +39,15 @@ Create Exam
 </form>
 </div>
 </x-app-layout>
+
+<script>
+document.getElementById('duration').addEventListener('input', function () {
+    if (this.value > 1440) {
+        this.value = 1440;
+    }
+    if (this.value < 1) {
+        this.value = 1;
+    }
+});
+</script>
+
